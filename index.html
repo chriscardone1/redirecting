@@ -1,0 +1,26 @@
+<script>
+
+window.onload = function() {
+
+    function getUrlVars() {
+
+    var vars = {};
+
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+
+        vars[key] = value;
+
+    });
+
+    return vars;
+
+}
+
+  var id = getUrlVars()["o"];
+  
+
+    window.location.replace('https://dance.ccdesignstudio.com/oauth?state=setup&onboarding-id=' + id);
+
+}
+
+</script>
